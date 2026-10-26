@@ -1,0 +1,51 @@
+/* 提取图片按钮样式 */
+#extract-images-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999999;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(238, 90, 36, 0.4);
+  transition: all 0.3s ease;
+}
+
+#extract-images-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(238, 90, 36, 0.5);
+}
+
+#extract-images-btn:active {
+  transform: translateY(0);
+}
+
+#extract-images-btn.loading {
+  background: #999;
+  cursor: not-allowed;
+}
+
+/* 提示消息样式 */
+#toast-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999999;
+  padding: 12px 24px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#toast-message.show {
+  opacity: 1;
+}
